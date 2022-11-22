@@ -1,0 +1,17 @@
+program LEAD;
+var
+    int: g1;
+
+function float test(float x)
+{
+    return(2.1);
+}
+
+main()
+var
+    float: mf1;
+
+{
+    call(mf1 = test(mf1));
+    write(mf1);
+}

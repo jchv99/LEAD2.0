@@ -1,0 +1,14 @@
+program LEAD;
+var
+    int: t1;
+
+main()
+var
+    int: prob1, vec[5];
+{
+    prob1 = 10;
+    vec[0] = 5;
+    vec[4] = prob1 + 15;
+    vec[1] = vec[0] * vec[4];
+    write(vec[1]);
+}

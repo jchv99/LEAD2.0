@@ -1,0 +1,38 @@
+program LEAD;
+var
+    int: t1;
+
+function int fact(int num)
+var
+    int: ret, n, temp;
+{
+    n = num;
+    if(num == 1){
+        return(1);
+    }else{
+        call(temp = fact(num - 1));
+        num = n * temp;
+        return(num);
+    }
+}
+
+main()
+var
+    int: res, fin;
+{
+    read(res);
+    if(res < 0){
+        write("No hay factorial de numeros menores a 0");
+
+    }
+    
+    if(res == 0){
+        write("Factorial Recursivo");
+        write(1);
+    }else{
+        write("Factorial Recursivo");
+        call(fin = fact(res));
+        write(fin);
+    }
+
+}

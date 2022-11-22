@@ -1,0 +1,39 @@
+program LEAD;
+var
+    int: global, global2, global3[6];
+
+main()
+var
+    int: main1, main2, main3[6];
+    float: main4, main5, main6[10], f1, f2;
+    char: fun1, fun2, fun3;
+{
+    main1 = main2 + main3 * (main1 + (f1 / f2) * main5);
+    f2 = main1;
+    write("HELLO WORLD" , main1, 1);
+
+    if(1 > 0){
+        main4 = f1 + f2;
+        write("MLP Compis");
+    }else{
+        main4 = 3;
+        read(main1);
+    }
+
+    f2 = main2;
+
+    while(main1 < main2){
+        write("hola");
+    }
+
+    read(fun3);
+
+    do{
+
+        main1 = 1;
+        write("wenas");
+
+    }while(f1 == f2);
+
+
+}

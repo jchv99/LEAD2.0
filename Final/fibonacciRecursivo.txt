@@ -1,0 +1,35 @@
+program LEAD;
+var
+    int: t1;
+
+function int fib(int n)
+var
+    int: fib1, fib2;
+{
+    
+    if(n <= 1){
+        return(n);
+    }else{
+        call(fib1 = fib(n - 1));
+        call(fib2 = fib(n - 2));
+        return(fib1 + fib2);
+    }
+}
+
+main()
+var
+    int: nTerms, cont, res;
+{
+    cont = 0;
+    read(nTerms);
+    if(nTerms <= 0){
+        write("Es necesario un numero positivo");
+    }else{
+        write("Fibonacci recursivo");
+        while(nTerms != cont){
+            call(res = fib(cont));
+            write(res);
+            cont = cont + 1;
+        }
+    }
+}

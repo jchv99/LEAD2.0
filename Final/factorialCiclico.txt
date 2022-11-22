@@ -1,0 +1,38 @@
+program LEAD;
+var
+    int: t1;
+
+function void fact(int num)
+var
+    int: fact;
+{
+    write("La respuesta al factorial ciclico es: ");
+    if(num < 0){
+        write("No existe el factorial negativo");
+    }
+
+    if(num == 0){
+        write(1);
+    }else{
+        fact = 1;
+        while(num > 1){
+            fact = fact * num;
+            num = num - 1;
+        }
+    
+    write(fact);
+
+    }
+
+
+}
+
+main()
+var
+    int: main1;
+
+{
+    read(main1);
+    call(fact(main1));
+    
+}
