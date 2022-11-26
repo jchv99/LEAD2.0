@@ -1,0 +1,25 @@
+program LEAD;
+
+main()
+var
+    int: vec[4], x, goal, temp;
+{
+    read(goal);
+    x = 0;
+    temp = 3;
+    vec[0] = 66;
+    vec[1] = 5;
+    vec[2] = 6;
+    vec[temp] = 77;
+    while(x != 4){
+        if(vec[x] == goal){
+            write("Se encontro en el indice");
+            write(x);
+            write("el numero");
+            write(vec[x]);
+        }
+        x = x + 1;
+    }
+    
+    
+}

@@ -1,0 +1,21 @@
+program LEAD;
+var
+    int: t1;
+function int sum(int x){
+    x = x + 1;
+    write(x);
+    if(x != 4){
+        call(x = sum(x));
+    }
+    return(x);
+    
+}
+
+main()
+var
+    int: main1;
+{
+    main1 = 1;
+    call(main1 = sum(main1));
+    write("hola", main1);
+}

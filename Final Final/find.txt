@@ -1,0 +1,29 @@
+program LEAD;
+var
+    int: t1;
+
+main()
+var
+    int: prob1, vec[10], cont;
+{
+    vec[0] = 3;
+    vec[1] = 5;
+    vec[2] = 10;
+    vec[3] = 8;
+    vec[4] = 33;
+    vec[5] = 1;
+    vec[6] = 95;
+    vec[7] = 346;
+    vec[8] = 899;
+    vec[9] = 1001;
+
+    write("Introduzca el valor que quiere encontrar y le dire su indice");
+    read(prob1);
+    cont = 0
+    while(cont != 10){
+        if(vec[cont] == prob1){
+            write(cont);
+        }
+        cont = cont + 1;
+    }
+}

@@ -1,0 +1,40 @@
+program LEAD;
+var
+    int: t1;
+
+function void fact(int num)
+var
+    int: n1, n2, nth, count;
+{
+    n1 = 0;
+    n2 = 1;
+    count = 0;
+    if(num <= 0){
+        write("Necesita ser un numero positivo");
+    }
+
+    if(num == 1){
+        write(n1);
+    }else{
+        write("Secuencia Fibonacci");
+        while(count < num){
+            write(n1);
+            nth = n1 + n2;
+            n1 = n2;
+            n2 = nth;
+            count = count + 1;
+        }
+    }
+
+
+}
+
+main()
+var
+    int: main1;
+{
+    read(main1);
+    write("-----");
+    call(fact(main1));
+    
+}

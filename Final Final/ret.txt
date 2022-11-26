@@ -1,0 +1,22 @@
+program LEAD;
+var
+    int: t1;
+
+function void sum(int x){
+    x = x + 5;
+    write(x);
+    if(x != 15){
+        call(sum(x));
+    }else{
+        write("X es 15");
+    }
+    
+}
+
+main()
+var
+    int: main1, main2;
+{
+    main1 = 0;
+    call(sum(main1));
+}

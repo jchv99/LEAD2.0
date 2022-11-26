@@ -1,0 +1,28 @@
+program LEAD;
+var
+    int: t1;
+
+function int pelos(int par2)
+var
+    int: ret;
+{
+    ret = par2 * 2 + 2;
+    return(ret);
+}
+
+function int patito(int par1)
+var
+    int: ret;
+{
+    call(ret = pelos(par1 * 2));
+    ret = ret + 3;
+    return(ret);
+}
+
+main()
+var
+    int: prob1, vec[5];
+{
+    call(prob1 = patito(4));
+    write(prob1);
+}
